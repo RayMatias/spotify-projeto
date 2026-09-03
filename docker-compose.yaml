@@ -1,0 +1,13 @@
+services:
+  spotify-projeto:
+    container_name: ray-matias/spotify-projeto/1.0.0:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    image: ray-matias/spotify-projeto/1.0.0:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
