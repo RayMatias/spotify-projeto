@@ -1,6 +1,6 @@
 services:
   spotify-projeto:
-    container_name: ray-matias/spotify-projeto/1.0.0:latest
+    container_name: spotify-projeto
     build: 
       context: .
       dockerfile: Dockerfile
